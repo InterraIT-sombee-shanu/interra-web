@@ -3,8 +3,9 @@
 import React from 'react';
 import styled from 'styled-components';
 
-import SocailSection from './SocialSection';
+import SocailSection from './socialsection';
 import FooterForm from './footerform';
+import QuickLink from './quicklink';
 
 const FooterContainer = styled.footer`
   display: flex;
@@ -27,6 +28,7 @@ const LeftSide = styled.div`
 
 const Paragraph = styled.p`
   margin-bottom: 20px;
+  margin-left: 22px;
   text-align: center;
 `;
 
@@ -67,6 +69,7 @@ export default function Footer() {
     <FooterContainer>
       <LeftSide>
         <Paragraph>We are a Silicon Valley based IT services organization that provides cutting-edge business and technology solutions, as well as immersive digital experiences to our clients around the world.</Paragraph>
+        <QuickLink />
         <SocailSection />
       </LeftSide>
       <CenteredVerticalLineWrapper>
