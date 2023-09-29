@@ -21,6 +21,9 @@ export default function Menu() {
 
 
 
+// Styled Components
+
+
 // items of menu -> ul
 const MenuList = styled.ul`
   list-style: none;
