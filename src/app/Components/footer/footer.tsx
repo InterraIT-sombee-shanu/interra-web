@@ -3,8 +3,9 @@
 import React from 'react';
 import styled from 'styled-components';
 
-import SocailSection from './SocialSection';
+
 import FooterForm from './footerform';
+import SocailSection from './socialsection';
 
 const FooterContainer = styled.footer`
   display: flex;
