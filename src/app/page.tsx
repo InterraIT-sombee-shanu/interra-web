@@ -14,10 +14,11 @@ export default function Home() {
   const pageTitle = "Home";
   return (
     <main className={styles.main}  style={{ padding: 0 }}>
-      <DigitalFootprintsContainer>
+      
+      {/* <DigitalFootprintsContainer>
         <DigitalFootprints />
       </DigitalFootprintsContainer>
-      <InnovateWithUsSection />
+      <InnovateWithUsSection /> */}
     </main>
   )
 }
