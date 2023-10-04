@@ -17,6 +17,7 @@ export default function Home() {
   return (
     <main className={styles.main}  style={{ padding: 0 }}>
       
+<<<<<<< HEAD
       <br />
       <br />
       <StrategicPartnersCarousel/>
@@ -30,6 +31,12 @@ export default function Home() {
       <InnovateWithUsSection />
      
      
+=======
+      {/* <DigitalFootprintsContainer>
+        <DigitalFootprints />
+      </DigitalFootprintsContainer>
+      <InnovateWithUsSection /> */}
+>>>>>>> 7eedf8f63d1ce4b251d76a03461e2451bf038ae3
     </main>
   )
 }
