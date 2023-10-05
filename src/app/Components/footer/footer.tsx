@@ -5,6 +5,7 @@ import styled from 'styled-components';
 
 
 import FooterForm from './footerform';
+import QuickLink from './quicklink';
 import SocailSection from './socialsection';
 
 const FooterContainer = styled.footer`
@@ -68,6 +69,7 @@ export default function Footer() {
     <FooterContainer>
       <LeftSide>
         <Paragraph>We are a Silicon Valley based IT services organization that provides cutting-edge business and technology solutions, as well as immersive digital experiences to our clients around the world.</Paragraph>
+        <QuickLink />
         <SocailSection />
       </LeftSide>
       <CenteredVerticalLineWrapper>
