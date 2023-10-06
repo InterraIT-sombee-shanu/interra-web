@@ -16,6 +16,7 @@ const MainContainer = styled.div`
   justify-content: center;
   width: 100%;
   background-color: #fff;
+  margin-bottom: 50px;
 `;
 
 const Heading = styled.h1`
@@ -88,19 +89,19 @@ export default function NextGenTech() {
           <ImageContainer>
           <ImageHeading>DevOps Solutions</ImageHeading>
             <Image src={DevOpsImage} alt="DevOps" width={1000} height={550} />
-            <YoutubeLogo />
+            {/* <YoutubeLogo /> */}
           </ImageContainer>
         </LeftContainer>
         <RightContainer>
           <ImageContainer>
           <ImageHeading>Digital Mobility</ImageHeading>
             <Image src={DigiMobImage} alt="Digital Mobility" width={400} height={240} />
-            <YoutubeLogo />
+            {/* <YoutubeLogo /> */}
           </ImageContainer>
           <ImageContainer>
           <ImageHeading>Autonomous Testing</ImageHeading>
             <Image src={AutonomTestImage} alt="Autonomous Testing" width={400} height={240} />
-            <YoutubeLogo />
+            {/* <YoutubeLogo /> */}
           </ImageContainer>
         </RightContainer>
       </SectionContainer>

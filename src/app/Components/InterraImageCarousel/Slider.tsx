@@ -1,7 +1,7 @@
 import React from "react";
 
 // Import Swiper React components
-import { Swiper, SwiperSlide } from 'swiper/react';
+import { Swiper, SwiperSlide, useSwiper } from 'swiper/react';
 import { Navigation, Pagination, Scrollbar, A11y } from 'swiper/modules';
 
 // Import Swiper styles
@@ -20,6 +20,7 @@ interface SliderProps {
   }
   
   export default function Slider({ slides }: SliderProps) {
+    const swiper = useSwiper();
     return (
       <Swiper
       modules={[Navigation, Pagination, Scrollbar, A11y]}
@@ -33,7 +34,9 @@ interface SliderProps {
       >
         {slides.map((slide, index) => (
           <SwiperSlide key={index}>
-            <Image src={slide.image} alt={slide.title} width={slide.width} height={slide.height} />
+            <Image src={slide.image} alt={slide.title} width={1000} height={700} />
+            <p>{slide.title}</p>
+            {/* <button onClick={() => swiper.slideNext()}>Slide to the next slide</button> */}
           </SwiperSlide>
         ))}
       </Swiper>

@@ -7,8 +7,6 @@ import InnovateWithUsSection from './Components/innovateWithUs/InnovateWithUs';
 import styled from 'styled-components';
 import InterraImageCarousel from './Components/InterraImageCarousel/InterraImg';
 import NextGenTech from './Components/NextGenTech/NextGenTech';
-import Header from './Components/header/header';
-import Footer from './Components/footer/footer';
 
 const DigitalFootprintsContainer = styled.div`
   margin-bottom: 20px;
@@ -20,11 +18,11 @@ export default function Home() {
   return (
     <main className={styles.main}  style={{ padding: 0 }}>
 
-      {/* <InterraImageCarousel/> */}
+      <InterraImageCarousel/>
 
-      <NextGenTech />
+      {/* <NextGenTech />
 
-      {/* <DigitalFootprintsContainer>
+      <DigitalFootprintsContainer>
         <DigitalFootprints />
       </DigitalFootprintsContainer>
       

@@ -1,9 +1,7 @@
-"use client"
-
-
 import React from "react";
 import styled from "styled-components";
 import Card from "./card/Card";
+
 
 const CardContainer = styled.div`
   display: flex;
@@ -15,9 +13,9 @@ const CardContainer = styled.div`
 export default function DigitalFootprints() {
   return (
     <>
-      <h2>We create digital footprints</h2>
+      <h1>We create digital footprints</h1>
       <br />
-      <h3>Check out the latest tech talks & webinars</h3>
+      <h2>Check out the latest tech talks & webinars</h2>
       <br />
       <CardContainer>
       <Card
