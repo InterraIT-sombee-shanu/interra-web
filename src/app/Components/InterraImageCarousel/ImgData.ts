@@ -8,50 +8,50 @@ import Interra6 from '../../../../public/Assests/Interra6.jpg';
 
 
 // Define the type for a single slide
-export type Slide = {
-  image: StaticImageData,
-  title: string,
-  width?: number,
-  height?: number,
-};
+export interface Slide {
+  image: {
+    src: StaticImageData; // Image source URL
+  };
+  title: string; // Slide title
+}
 
 // Define the array of slides
 const slides: Slide[] = [
   {
-    image: Interra1,
+    image: {
+      src: Interra1,
+    },
     title: "Image 1",
-    // width: 1800, 
-    // height: 1000,
   },
   {
-    image: Interra2,
-    title: "Image 2",
-    // width: 800, 
-    // height: 600, 
+    image: {
+      src: Interra2,
+    },
+    title: "Image 2", 
   },
   {
-    image: Interra3,
+    image: {
+      src: Interra3,
+    },
     title: "Image 3",
-    // width: 800, 
-    // height: 600, 
   },
   {
-    image: Interra4,
-    title: "Image 4",
-    // width: 800, 
-    // height: 600, 
+    image: {
+      src: Interra4,
+    },
+    title: "Image 4", 
   },
   {
-    image: Interra5,
+    image: {
+      src: Interra5,
+    },
     title: "Image 5",
-    // width: 800, 
-    // height: 600, 
   },
   {
-    image: Interra6,
-    title: "Image 6",
-    // width: 800, 
-    // height: 600, 
+    image: {
+      src: Interra6,
+    },
+    title: "Image 6", 
   },
 ];
 

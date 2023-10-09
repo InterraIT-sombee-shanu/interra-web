@@ -1,10 +1,12 @@
 
 "use client"
-import Image from 'next/image'
-import styles from './page.module.css'
+import styles from './page.module.css';
+
+import styled from 'styled-components';
+
+
 import DigitalFootprints from './Components/digitalFootprints/DigitalFootprints';
 import InnovateWithUsSection from './Components/innovateWithUs/InnovateWithUs';
-import styled from 'styled-components';
 import InterraImageCarousel from './Components/InterraImageCarousel/InterraImg';
 import NextGenTech from './Components/NextGenTech/NextGenTech';
 
@@ -18,15 +20,16 @@ export default function Home() {
   return (
     <main className={styles.main}  style={{ padding: 0 }}>
 
-      <InterraImageCarousel/>
+      <InterraImageCarousel />
 
-      {/* <NextGenTech />
 
-      <DigitalFootprintsContainer>
+      {/* <NextGenTech /> */}
+
+      {/* <DigitalFootprintsContainer>
         <DigitalFootprints />
-      </DigitalFootprintsContainer>
+      </DigitalFootprintsContainer> */}
       
-      <InnovateWithUsSection /> */}
+      {/* <InnovateWithUsSection /> */}
 
     </main>
   )

@@ -37,6 +37,7 @@ const SubmitButton = styled.button`
   border-radius: 30px;
   margin-top: 10px;
   cursor: pointer;
+  font-size: 14px;
 `;
 
 export default function FooterForm() {
