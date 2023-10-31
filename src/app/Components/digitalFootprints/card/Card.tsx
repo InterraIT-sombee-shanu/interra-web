@@ -70,9 +70,9 @@ export default function Card(props: CardProps) {
     <CardContainer>
       <CardImage src={image} alt="Card Image" />
       <CardBody>
-        <CardTitle href={linkRef}>{title}</CardTitle>
+        <CardTitle href={linkRef}>{title}</CardTitle> 
         <CardType>{type}</CardType>
-        <CardLink href={linkRef}>{linkText}  <FontAwesomeIcon icon={faArrowRight} /></CardLink>
+        <CardLink target="_blank" rel="noopener noreferrer"  href={linkRef}>{linkText}  <FontAwesomeIcon icon={faArrowRight} /></CardLink>
       </CardBody>
     </CardContainer>
   );

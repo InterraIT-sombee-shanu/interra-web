@@ -23,21 +23,21 @@ export default function DigitalFootprints() {
           title="AMS For Development, SCM, Monitoring & Reporting"
           type="CASE STUDY"
           linkText="Download"
-          linkRef="#"
+          linkRef="https://www.interrait.com/sites/default/files/gbb-uploads/pdffiles/AMS_Case_study_AMS_for_Development,_SCM,_Monitoring_and_Reporting.pdf"
         />
         <Card
           image="https://www.interrait.com/sites/default/files/gbb-uploads/webp/Technovate6_homepage.webp"
           title="Entrepreneur Or Small Business Owner: Which One Are You?"
           type="TECHNOVATE"
           linkText="View Video"
-          linkRef="#"
+          linkRef="https://www.youtube.com/watch?v=fSmONMv-sbk&t=1366s"
         />
         <Card
           image="https://www.interrait.com/sites/default/files/gbb-uploads/webp/The-AI-Driven-Transformation-Of-Software-Testing.webp"
           title="The AI - Driven Transformation Of Software Testing "
           type="WEBINAR"
           linkText="View Video"
-          linkRef="#"
+          linkRef="https://www.youtube.com/watch?v=mRqWqJ4Ic8g"
         />
       </CardContainer>
     </>

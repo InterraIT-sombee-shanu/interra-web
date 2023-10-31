@@ -23,13 +23,13 @@ export default function Home() {
       <InterraImageCarousel />
 
 
-      {/* <NextGenTech /> */}
+      <NextGenTech />
 
-      {/* <DigitalFootprintsContainer>
+      <DigitalFootprintsContainer>
         <DigitalFootprints />
-      </DigitalFootprintsContainer> */}
+      </DigitalFootprintsContainer>
       
-      {/* <InnovateWithUsSection /> */}
+      <InnovateWithUsSection />
 
     </main>
   )
