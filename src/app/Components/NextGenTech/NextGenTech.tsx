@@ -21,7 +21,6 @@ const MainContainer = styled.div`
   width: 100%;
   background-color: #fff;
   margin-bottom: 50px;
-  z-index: -1;
 `;
 
 const Heading = styled.h1`
@@ -123,6 +122,7 @@ export default function NextGenTech() {
   const onVideoButtonClick = (link: string) => {
     setShowVideo(true);
     setVideoLink(link);
+    console.log("Clicked");
   };
 
   const closeVideo = () => {

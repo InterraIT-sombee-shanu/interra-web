@@ -61,6 +61,7 @@ const HeaderContainer = styled.header`
   background-color: #fff;
   width: 100%;
   position: fixed;
+  z-index: 1;
 
   @media (max-width: 576px) {
     flex-direction: column;
