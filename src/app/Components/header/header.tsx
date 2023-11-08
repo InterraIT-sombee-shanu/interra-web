@@ -44,7 +44,7 @@ export default function Header() {
       </IconsContainer>
       {isSearchClicked && <SearchForm />}
       <MenuContainer className={isMenuOpen ? "open" : ""}>
-        <Menu />
+      <Menu isMenuOpen={isMenuOpen} toggleMenu={toggleMenu} />
       </MenuContainer>
     </HeaderContainer>
   );
@@ -116,34 +116,6 @@ const MenuContainer = styled.div`
   box-shadow: 0 0 20px 3px black;
 
   &.open {
-    right: 0; /* Slide the menu in when open */
+    right: 0;
   }
 `;
-
-// "use client";
-
-// import React from "react";
-// import styled from "styled-components";
-
-// export default function Header() {
-//   return (
-//     <>
-//       <Wrapper>
-//         <Title>Hello World!</Title>
-//       </Wrapper>
-//     </>
-//   );
-// }
-
-// // Create a Title component that'll render an <h1> tag with some styles
-// const Title = styled.h1`
-//   font-size: 1.5em;
-//   text-align: center;
-//   color: #bf4f74;
-// `;
-
-// // Create a Wrapper component that'll render a <section> tag with some styles
-// const Wrapper = styled.section`
-//   padding: 4em;
-//   background: papayawhip;
-// `;

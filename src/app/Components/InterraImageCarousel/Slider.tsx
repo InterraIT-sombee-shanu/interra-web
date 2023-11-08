@@ -242,7 +242,7 @@ export default function Slider({ slides }: SliderProps) {
         {slides.map((slide, index) => (
           <SwiperSlide key={index}>
             <div className="swiper-slide-content">
-              <Image src={slide.image.src} alt={slide.title} width={1000} height={700} />
+              <Image src={slide.image.src} alt={slide.title} width={480} height={400} />
               <p>{slide.title}</p>
             </div>
           </SwiperSlide>

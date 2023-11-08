@@ -1,44 +1,66 @@
-import React from "react";
+import React, { useState } from "react";
+import { AiOutlineClose } from "react-icons/ai";
 import styled from "styled-components";
 
-export default function Menu() {
+interface MenuProps {
+  isMenuOpen: boolean;
+  toggleMenu: () => void;
+}
+
+export default function Menu({ isMenuOpen, toggleMenu }: MenuProps) {
   return (
-    <MenuList>
-      <MenuItem>
-        <a href="#">Home</a>
-      </MenuItem>
-      <MenuItem>
-        <a href="#">About Us</a>
-      </MenuItem>
-      <MenuItem>
-        <a href="#">Services</a>
-      </MenuItem>
-      <MenuItem>
-        <a href="#">Industries</a>
-      </MenuItem>
-      <MenuItem>
-        <a href="#">Insights</a>
-      </MenuItem>
-      <MenuItem>
-        <a href="#">Life At InterraIT</a>
-      </MenuItem>
-      <MenuItem>
-        <a href="#">Careers</a>
-      </MenuItem>
-      <MenuItem>
-        <a href="#">Contact Us</a>
-      </MenuItem>
-    </MenuList>
+    <>
+      <IconContainer>
+        <AiOutlineClose style={{ fontSize: "30px" }} onClick={toggleMenu}/>
+      </IconContainer>
+
+      <MenuList>
+        <MenuItem>
+          <a href="#">Home</a>
+        </MenuItem>
+        <MenuItem>
+          <a href="#">About Us</a>
+        </MenuItem>
+        <MenuItem>
+          <a href="#">Services</a>
+        </MenuItem>
+        <MenuItem>
+          <a href="#">Industries</a>
+        </MenuItem>
+        <MenuItem>
+          <a href="#">Insights</a>
+        </MenuItem>
+        <MenuItem>
+          <a href="#">Life At InterraIT</a>
+        </MenuItem>
+        <MenuItem>
+          <a href="#">Careers</a>
+        </MenuItem>
+        <MenuItem>
+          <a href="#">Contact Us</a>
+        </MenuItem>
+      </MenuList>
+    </>
   );
 }
 
 // Styled Components
 
+// Icon
+const IconContainer = styled.div`
+  margin-top: 60px;
+  margin-left: 50%;
+  color: #28997F;
+  &:hover {
+    color: #DA2C43;
+  }
+`;
+
 // items of menu -> ul
 const MenuList = styled.ul`
   list-style: none;
   padding: 0;
-  margin-top: 70px;
+  margin-top: 10px;
   display: flex;
   flex-direction: column;
   align-items: start;
@@ -59,10 +81,10 @@ const MenuItem = styled.li`
 
   /* Add styles for the anchor tag */
   a {
-    text-decoration: none; /* Remove underline from links */
-    color: inherit; /* Inherit text color */
-    border-bottom: 0; /* Remove bottom border */
-    display: block; /* Make the anchor tag a block element for full width */
+    text-decoration: none;
+    color: inherit;
+    border-bottom: 0;
+    display: block;
 
     &:after {
       content: "";
@@ -73,7 +95,7 @@ const MenuItem = styled.li`
       position: absolute;
       transition: all 0.3s ease 0s;
       -webkit-transition: all 0.3s ease 0s;
-      z-index: 1;
+      z-index: -1;
     }
 
     &:hover:after {
