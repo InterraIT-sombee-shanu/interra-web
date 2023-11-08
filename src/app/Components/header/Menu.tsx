@@ -73,7 +73,7 @@ const MenuItem = styled.li`
       position: absolute;
       transition: all 0.3s ease 0s;
       -webkit-transition: all 0.3s ease 0s;
-      z-index: 1;
+      z-index: -1;
     }
 
     &:hover:after {
