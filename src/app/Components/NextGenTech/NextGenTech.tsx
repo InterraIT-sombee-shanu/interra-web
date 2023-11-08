@@ -21,6 +21,7 @@ const MainContainer = styled.div`
   width: 100%;
   background-color: #fff;
   margin-bottom: 50px;
+  z-index: -1;
 `;
 
 const Heading = styled.h1`
@@ -94,12 +95,11 @@ const CloseButton = styled(AiOutlineClose)`
 `;
 
 const VideoContainer = styled.div`
-  left : 34%;
+  left: 34%;
   position: absolute;
   width: 100%;
   padding-top: 5%;
 `;
-
 
 const videoLinks = {
   devOps: "ZJem7WOtGJw",
@@ -175,7 +175,7 @@ export default function NextGenTech() {
           </ImageContainer>
         </RightContainer>
       </SectionContainer>
-       {showVideo ? (
+      {showVideo ? (
         <VideoContainer>
           <CloseButton onClick={closeVideo}>Close Video</CloseButton>
           <YouTube videoId={videoLink} opts={videoOptions} />

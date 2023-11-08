@@ -1,28 +1,38 @@
-import React from 'react';
-import styled from 'styled-components';
-
-
+import React from "react";
+import styled from "styled-components";
 
 export default function Menu() {
-    return (
-        <MenuList>
-          <MenuItem><a href='#'>Home</a></MenuItem>
-          <MenuItem><a href='#'>About Us</a></MenuItem>
-          <MenuItem><a href='#'>Services</a></MenuItem>
-          <MenuItem><a href='#'>Industries</a></MenuItem>
-          <MenuItem><a href='#'>Insights</a></MenuItem>
-          <MenuItem><a href='#'>Life At InterraIT</a></MenuItem>
-          <MenuItem><a href='#'>Careers</a></MenuItem>
-          <MenuItem><a href='#'>Contact Us</a></MenuItem>
-        </MenuList>
-    )
-};
-
-
-
+  return (
+    <MenuList>
+      <MenuItem>
+        <a href="#">Home</a>
+      </MenuItem>
+      <MenuItem>
+        <a href="#">About Us</a>
+      </MenuItem>
+      <MenuItem>
+        <a href="#">Services</a>
+      </MenuItem>
+      <MenuItem>
+        <a href="#">Industries</a>
+      </MenuItem>
+      <MenuItem>
+        <a href="#">Insights</a>
+      </MenuItem>
+      <MenuItem>
+        <a href="#">Life At InterraIT</a>
+      </MenuItem>
+      <MenuItem>
+        <a href="#">Careers</a>
+      </MenuItem>
+      <MenuItem>
+        <a href="#">Contact Us</a>
+      </MenuItem>
+    </MenuList>
+  );
+}
 
 // Styled Components
-
 
 // items of menu -> ul
 const MenuList = styled.ul`
@@ -63,14 +73,14 @@ const MenuItem = styled.li`
       position: absolute;
       transition: all 0.3s ease 0s;
       -webkit-transition: all 0.3s ease 0s;
-      z-index: -2;
+      z-index: 1;
     }
 
     &:hover:after {
       width: 100%;
     }
   }
-  
+
   /* Apply border and background styles based on index */
   &:nth-child(1) a {
     border-left: 10px solid #3498db;

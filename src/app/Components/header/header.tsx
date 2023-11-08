@@ -1,26 +1,22 @@
-"use client"
+"use client";
 
+import React, { useState } from "react";
+import styled from "styled-components";
+import Logo from "../../../../public/Assests/logo.png";
+import Image from "next/image";
+import { AiOutlineSearch, AiOutlineBars, AiOutlineClose } from "react-icons/ai";
 
-import React, { useState } from 'react';
-import styled from 'styled-components';
-import Logo from '../../../../public/Assests/logo.png';
-import Image from 'next/image';
-import { AiOutlineSearch, AiOutlineBars, AiOutlineClose } from 'react-icons/ai';
-
-
-import SearchForm from './searchform';
-import Menu from './Menu';
-
+import SearchForm from "./searchform";
+import Menu from "./Menu";
 
 export default function Header() {
-
   // all the hoooks related stuff
   const [isSearchClicked, setIsSearchClicked] = useState<boolean>(false);
   const [isMenuOpen, setIsMenuOpen] = useState<boolean>(false);
 
   // all the functions for the working functionalities
   function toggleSearchForm() {
-    setIsSearchClicked(!isSearchClicked); 
+    setIsSearchClicked(!isSearchClicked);
     setIsMenuOpen(false); // if the search is open menu sholud be closed
   }
 
@@ -29,33 +25,30 @@ export default function Header() {
     setIsMenuOpen(!isMenuOpen);
   }
 
-  
   // react return
   return (
     <HeaderContainer>
-        <ImageDiv>
-            <Image src={Logo} alt="Logo" />
-        </ImageDiv>
-        <IconsContainer>
-            <AiOutlineSearch style = {{ fontSize : "36px" }} onClick = {toggleSearchForm} />
-            {isMenuOpen ? 
-            (
-              <AiOutlineClose style={{ fontSize: "36px" }} onClick={ toggleMenu } />
-            ) 
-          : 
-            (
-            <AiOutlineBars style={{ fontSize: "36px" }} onClick={ toggleMenu } />
-            )}
-        </IconsContainer>
-        { isSearchClicked && <SearchForm /> }
-        <MenuContainer className={isMenuOpen ? 'open' : ''}>
-            <Menu />
-        </MenuContainer>
+      <ImageDiv>
+        <Image src={Logo} alt="Logo" />
+      </ImageDiv>
+      <IconsContainer>
+        <AiOutlineSearch
+          style={{ fontSize: "36px" }}
+          onClick={toggleSearchForm}
+        />
+        {isMenuOpen ? (
+          <AiOutlineClose style={{ fontSize: "36px" }} onClick={toggleMenu} />
+        ) : (
+          <AiOutlineBars style={{ fontSize: "36px" }} onClick={toggleMenu} />
+        )}
+      </IconsContainer>
+      {isSearchClicked && <SearchForm />}
+      <MenuContainer className={isMenuOpen ? "open" : ""}>
+        <Menu />
+      </MenuContainer>
     </HeaderContainer>
   );
-};
-
-
+}
 
 // Styled Components
 
@@ -85,18 +78,18 @@ const HeaderContainer = styled.header`
 
 // Logo
 const ImageDiv = styled.div`
-
-  & > img { /* targetting the image */
+  & > img {
+    /* targetting the image */
     max-width: 90%;
     height: auto;
 
     @media (max-width: 576px) {
-        margin-right: 0;
-        margin-bottom: 12px;
+      margin-right: 0;
+      margin-bottom: 12px;
     }
 
     @media (min-width: 577px) and (max-width: 768px) {
-        max-width: 60px; /* Adjust the logo width for tablets */
+      max-width: 60px; /* Adjust the logo width for tablets */
     }
   }
 `;
@@ -104,7 +97,7 @@ const ImageDiv = styled.div`
 // Search and Hamburger icon
 const IconsContainer = styled.div`
   display: flex;
-  gap : 35px;
+  gap: 35px;
   @media (max-width: 768px) {
     margin-top: 12px;
   }
@@ -127,4 +120,30 @@ const MenuContainer = styled.div`
   }
 `;
 
+// "use client";
 
+// import React from "react";
+// import styled from "styled-components";
+
+// export default function Header() {
+//   return (
+//     <>
+//       <Wrapper>
+//         <Title>Hello World!</Title>
+//       </Wrapper>
+//     </>
+//   );
+// }
+
+// // Create a Title component that'll render an <h1> tag with some styles
+// const Title = styled.h1`
+//   font-size: 1.5em;
+//   text-align: center;
+//   color: #bf4f74;
+// `;
+
+// // Create a Wrapper component that'll render a <section> tag with some styles
+// const Wrapper = styled.section`
+//   padding: 4em;
+//   background: papayawhip;
+// `;
