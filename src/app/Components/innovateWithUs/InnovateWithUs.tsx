@@ -5,7 +5,8 @@ import React from 'react';
 import styled from 'styled-components';
 
 const SectionContainer = styled.section`
-  background-image: url('https://www.interrait.com/sites/default/files/gbb-uploads/webp/bg03_opt.webp');
+  // background-image: url('https://www.interrait.com/sites/default/files/gbb-uploads/webp/bg03_opt.webp');
+  background-color : #888;
   background-size: cover;
   background-position: center;
   padding: 50px;
@@ -16,12 +17,12 @@ const SectionContainer = styled.section`
 
 const Title = styled.h2`
   font-size: 36px;
-  margin-bottom: 20px;
+  margin-bottom: 25px;
 `;
 
 const Subtitle = styled.p`
   font-size: 18px;
-  margin-bottom: 30px;
+  margin-bottom: 35px;
 `;
 
 const Button = styled.button`
@@ -32,6 +33,10 @@ const Button = styled.button`
   border-radius: 5px;
   font-size: 16px;
   cursor: pointer;
+  &:hover {
+    background-color: #fff;
+    color: #007bff;
+  }
 `;
 
 export default function InnovateWithUsSection()  {
